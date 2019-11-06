@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>670581837450-aml9aa9muujs634c6u8sc2glvm2iteam.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.670581837450-aml9aa9muujs634c6u8sc2glvm2iteam</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBItvwESsxRRqujgAkJ5on7dx9CVtx1I6E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>670581837450</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ziruoinc.yinkinChat</string>
+	<key>PROJECT_ID</key>
+	<string>yinkinchat</string>
+	<key>STORAGE_BUCKET</key>
+	<string>yinkinchat.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:670581837450:ios:250c730ae488870d</string>
+	<key>DATABASE_URL</key>
+	<string>https://yinkinchat.firebaseio.com</string>
+</dict>
+</plist>

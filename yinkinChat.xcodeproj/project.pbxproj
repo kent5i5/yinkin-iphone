@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		343B6E89235968630030E638 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343B6E88235968630030E638 /* main.storyboard */; };
+		34D9F3CD2344067D004D936B /* messageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D9F3C62344067D004D936B /* messageTableViewCell.xib */; };
+		34D9F3CE2344067D004D936B /* messageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9F3C72344067D004D936B /* messageTableViewCell.swift */; };
+		34D9F3D12344067D004D936B /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9F3CA2344067D004D936B /* BlogViewController.swift */; };
+		34D9F3D32344067D004D936B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D9F3CC2344067D004D936B /* Launch Screen.storyboard */; };
+		34D9F3D523440B27004D936B /* BlogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9F3D423440B27004D936B /* BlogTableViewCell.swift */; };
+		34DAC7C5234416F600C8E388 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DAC7C4234416F600C8E388 /* Blog.swift */; };
+		34EF211B23446CAA00917A67 /* BlogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EF211A23446CAA00917A67 /* BlogDetailViewController.swift */; };
+		34EFD5332346B1C900FCA2BD /* NewStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EFD5322346B1C900FCA2BD /* NewStoryViewController.swift */; };
+		34EFD5342346B1C900FCA2BD /* NewStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EFD5322346B1C900FCA2BD /* NewStoryViewController.swift */; };
+		34EFD5382346B8F000FCA2BD /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EFD5372346B8F000FCA2BD /* PreviewViewController.swift */; };
+		34F1F2E2230CACF8004F4A51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F1F2E1230CACF8004F4A51 /* AppDelegate.swift */; };
+		34F1F2E4230CACF8004F4A51 /* chatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F1F2E3230CACF8004F4A51 /* chatViewController.swift */; };
+		34F1F2EA230CACF9004F4A51 /* yinkinChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 34F1F2E8230CACF9004F4A51 /* yinkinChat.xcdatamodeld */; };
+		34F1F2EC230CACFA004F4A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F1F2EB230CACFA004F4A51 /* Assets.xcassets */; };
+		34F1F31B230CC7EC004F4A51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34F1F31A230CC7EC004F4A51 /* GoogleService-Info.plist */; };
+		34F1F323230CCCA8004F4A51 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F1F322230CCCA8004F4A51 /* registerViewController.swift */; };
+		34F1F325230CCCD1004F4A51 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F1F324230CCCD1004F4A51 /* loginViewController.swift */; };
+		34F1F327230CDB4E004F4A51 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F1F326230CDB4E004F4A51 /* Message.swift */; };
+		7E9290E5FD132540B9B96286 /* Pods_yinkinChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D11C29C321E5B16C50ABE3A /* Pods_yinkinChatTests.framework */; };
+		C2BA230EF34310A9AB0F6138 /* Pods_yinkinChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE1A42A59270C5728A66D14 /* Pods_yinkinChat.framework */; };
+		FFFBCE6BC2F8E6C891828676 /* Pods_yinkinChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6562D44801EC4751E877C6C2 /* Pods_yinkinChatUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34F1F2F6230CACFA004F4A51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34F1F2D6230CACF8004F4A51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34F1F2DD230CACF8004F4A51;
+			remoteInfo = yinkinChat;
+		};
+		34F1F301230CACFA004F4A51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34F1F2D6230CACF8004F4A51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34F1F2DD230CACF8004F4A51;
+			remoteInfo = yinkinChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F1F639B96563AF622B47848 /* Pods-yinkinChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinkinChatUITests.release.xcconfig"; path = "Target Support Files/Pods-yinkinChatUITests/Pods-yinkinChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1D11C29C321E5B16C50ABE3A /* Pods_yinkinChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yinkinChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32685CF8D71864614B7BC81D /* Pods-yinkinChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinkinChat.release.xcconfig"; path = "Target Support Files/Pods-yinkinChat/Pods-yinkinChat.release.xcconfig"; sourceTree = "<group>"; };
+		343B6E88235968630030E638 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = main.storyboard; path = ../Controller/main.storyboard; sourceTree = "<group>"; };
+		3443FC04235FB7DA0086E14B /* yinkinChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yinkinChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3443FC05235FB7DA0086E14B /* yinkinChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yinkinChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3443FC06235FB7DA0086E14B /* yinkinChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yinkinChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34BA20DF235ED09700D513C8 /* yinkinChat.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = yinkinChat.xctestplan; sourceTree = "<group>"; };
+		34D9F3C62344067D004D936B /* messageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = messageTableViewCell.xib; sourceTree = "<group>"; };
+		34D9F3C72344067D004D936B /* messageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageTableViewCell.swift; sourceTree = "<group>"; };
+		34D9F3CA2344067D004D936B /* BlogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
+		34D9F3CC2344067D004D936B /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		34D9F3D423440B27004D936B /* BlogTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogTableViewCell.swift; sourceTree = "<group>"; };
+		34DAC7C4234416F600C8E388 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
+		34EF211A23446CAA00917A67 /* BlogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogDetailViewController.swift; sourceTree = "<group>"; };
+		34EFD5322346B1C900FCA2BD /* NewStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewStoryViewController.swift; sourceTree = "<group>"; };
+		34EFD5372346B8F000FCA2BD /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		34F1F2E1230CACF8004F4A51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34F1F2E3230CACF8004F4A51 /* chatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatViewController.swift; sourceTree = "<group>"; };
+		34F1F2E9230CACF9004F4A51 /* yinkinChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = yinkinChat.xcdatamodel; sourceTree = "<group>"; };
+		34F1F2EB230CACFA004F4A51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34F1F2F0230CACFA004F4A51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34F1F31A230CC7EC004F4A51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		34F1F322230CCCA8004F4A51 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		34F1F324230CCCD1004F4A51 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		34F1F326230CDB4E004F4A51 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		3F39704E8125B4AE89F5861E /* Pods-yinkinChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinkinChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-yinkinChatUITests/Pods-yinkinChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6562D44801EC4751E877C6C2 /* Pods_yinkinChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yinkinChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72EDE3A0FF34D7B0E7D4518B /* Pods-yinkinChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinkinChat.debug.xcconfig"; path = "Target Support Files/Pods-yinkinChat/Pods-yinkinChat.debug.xcconfig"; sourceTree = "<group>"; };
+		988FF4008FD8FCC3289AD83D /* Pods-yinkinChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinkinChatTests.debug.xcconfig"; path = "Target Support Files/Pods-yinkinChatTests/Pods-yinkinChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9EE1A42A59270C5728A66D14 /* Pods_yinkinChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yinkinChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA88CD58DF78FDFBDDE73A1C /* Pods-yinkinChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinkinChatTests.release.xcconfig"; path = "Target Support Files/Pods-yinkinChatTests/Pods-yinkinChatTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34F1F2DB230CACF8004F4A51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2BA230EF34310A9AB0F6138 /* Pods_yinkinChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34F1F2F2230CACFA004F4A51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E9290E5FD132540B9B96286 /* Pods_yinkinChatTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34F1F2FD230CACFA004F4A51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFBCE6BC2F8E6C891828676 /* Pods_yinkinChatUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ECC4F84F62DAEECEF0D0EA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72EDE3A0FF34D7B0E7D4518B /* Pods-yinkinChat.debug.xcconfig */,
+				32685CF8D71864614B7BC81D /* Pods-yinkinChat.release.xcconfig */,
+				988FF4008FD8FCC3289AD83D /* Pods-yinkinChatTests.debug.xcconfig */,
+				DA88CD58DF78FDFBDDE73A1C /* Pods-yinkinChatTests.release.xcconfig */,
+				3F39704E8125B4AE89F5861E /* Pods-yinkinChatUITests.debug.xcconfig */,
+				0F1F639B96563AF622B47848 /* Pods-yinkinChatUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		34F1F2D5230CACF8004F4A51 = {
+			isa = PBXGroup;
+			children = (
+				34F1F2E0230CACF8004F4A51 /* yinkinChat */,
+				1ECC4F84F62DAEECEF0D0EA1 /* Pods */,
+				627627C02068E36294D775EC /* Frameworks */,
+				3443FC04235FB7DA0086E14B /* yinkinChat.app */,
+				3443FC05235FB7DA0086E14B /* yinkinChatTests.xctest */,
+				3443FC06235FB7DA0086E14B /* yinkinChatUITests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		34F1F2E0230CACF8004F4A51 /* yinkinChat */ = {
+			isa = PBXGroup;
+			children = (
+				34F1F2F0230CACFA004F4A51 /* Info.plist */,
+				34F1F315230CADA6004F4A51 /* Supporting Files */,
+				34F1F314230CAD1F004F4A51 /* Controller */,
+				34F1F312230CAD0F004F4A51 /* View */,
+				34F1F313230CAD15004F4A51 /* Model */,
+			);
+			path = yinkinChat;
+			sourceTree = "<group>";
+		};
+		34F1F312230CAD0F004F4A51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				343B6E88235968630030E638 /* main.storyboard */,
+				34D9F3CC2344067D004D936B /* Launch Screen.storyboard */,
+				34D9F3C72344067D004D936B /* messageTableViewCell.swift */,
+				34D9F3C62344067D004D936B /* messageTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34F1F313230CAD15004F4A51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34F1F326230CDB4E004F4A51 /* Message.swift */,
+				34F1F2E8230CACF9004F4A51 /* yinkinChat.xcdatamodeld */,
+				34DAC7C4234416F600C8E388 /* Blog.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34F1F314230CAD1F004F4A51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34D9F3CA2344067D004D936B /* BlogViewController.swift */,
+				34BA20DF235ED09700D513C8 /* yinkinChat.xctestplan */,
+				34D9F3D423440B27004D936B /* BlogTableViewCell.swift */,
+				34F1F322230CCCA8004F4A51 /* registerViewController.swift */,
+				34F1F2E3230CACF8004F4A51 /* chatViewController.swift */,
+				34F1F324230CCCD1004F4A51 /* loginViewController.swift */,
+				34F1F2E1230CACF8004F4A51 /* AppDelegate.swift */,
+				34EF211A23446CAA00917A67 /* BlogDetailViewController.swift */,
+				34EFD5322346B1C900FCA2BD /* NewStoryViewController.swift */,
+				34EFD5372346B8F000FCA2BD /* PreviewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34F1F315230CADA6004F4A51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34F1F31A230CC7EC004F4A51 /* GoogleService-Info.plist */,
+				34F1F2EB230CACFA004F4A51 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		627627C02068E36294D775EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EE1A42A59270C5728A66D14 /* Pods_yinkinChat.framework */,
+				1D11C29C321E5B16C50ABE3A /* Pods_yinkinChatTests.framework */,
+				6562D44801EC4751E877C6C2 /* Pods_yinkinChatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34F1F2DD230CACF8004F4A51 /* yinkinChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34F1F309230CACFA004F4A51 /* Build configuration list for PBXNativeTarget "yinkinChat" */;
+			buildPhases = (
+				9E5A2662B35BABB74CCE2C46 /* [CP] Check Pods Manifest.lock */,
+				34F1F2DA230CACF8004F4A51 /* Sources */,
+				34F1F2DB230CACF8004F4A51 /* Frameworks */,
+				34F1F2DC230CACF8004F4A51 /* Resources */,
+				72219DF71F4C1242E24BA079 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yinkinChat;
+			productName = yinkinChat;
+			productReference = 3443FC04235FB7DA0086E14B /* yinkinChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34F1F2F4230CACFA004F4A51 /* yinkinChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34F1F30C230CACFA004F4A51 /* Build configuration list for PBXNativeTarget "yinkinChatTests" */;
+			buildPhases = (
+				2CA8B1757E1611649073F9C2 /* [CP] Check Pods Manifest.lock */,
+				34F1F2F1230CACFA004F4A51 /* Sources */,
+				34F1F2F2230CACFA004F4A51 /* Frameworks */,
+				34F1F2F3230CACFA004F4A51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34F1F2F7230CACFA004F4A51 /* PBXTargetDependency */,
+			);
+			name = yinkinChatTests;
+			productName = yinkinChatTests;
+			productReference = 3443FC05235FB7DA0086E14B /* yinkinChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		34F1F2FF230CACFA004F4A51 /* yinkinChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34F1F30F230CACFA004F4A51 /* Build configuration list for PBXNativeTarget "yinkinChatUITests" */;
+			buildPhases = (
+				A0F7168CDF00C258FA9FFFB8 /* [CP] Check Pods Manifest.lock */,
+				34F1F2FC230CACFA004F4A51 /* Sources */,
+				34F1F2FD230CACFA004F4A51 /* Frameworks */,
+				34F1F2FE230CACFA004F4A51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34F1F302230CACFA004F4A51 /* PBXTargetDependency */,
+			);
+			name = yinkinChatUITests;
+			productName = yinkinChatUITests;
+			productReference = 3443FC06235FB7DA0086E14B /* yinkinChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34F1F2D6230CACF8004F4A51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "ying kit ng";
+				TargetAttributes = {
+					34F1F2DD230CACF8004F4A51 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					34F1F2F4230CACFA004F4A51 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 34F1F2DD230CACF8004F4A51;
+					};
+					34F1F2FF230CACFA004F4A51 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 34F1F2DD230CACF8004F4A51;
+					};
+				};
+			};
+			buildConfigurationList = 34F1F2D9230CACF8004F4A51 /* Build configuration list for PBXProject "yinkinChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34F1F2D5230CACF8004F4A51;
+			productRefGroup = 34F1F2D5230CACF8004F4A51;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34F1F2DD230CACF8004F4A51 /* yinkinChat */,
+				34F1F2F4230CACFA004F4A51 /* yinkinChatTests */,
+				34F1F2FF230CACFA004F4A51 /* yinkinChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34F1F2DC230CACF8004F4A51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				343B6E89235968630030E638 /* main.storyboard in Resources */,
+				34D9F3D32344067D004D936B /* Launch Screen.storyboard in Resources */,
+				34D9F3CD2344067D004D936B /* messageTableViewCell.xib in Resources */,
+				34F1F31B230CC7EC004F4A51 /* GoogleService-Info.plist in Resources */,
+				34F1F2EC230CACFA004F4A51 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34F1F2F3230CACFA004F4A51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34F1F2FE230CACFA004F4A51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CA8B1757E1611649073F9C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yinkinChatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72219DF71F4C1242E24BA079 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yinkinChat/Pods-yinkinChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yinkinChat/Pods-yinkinChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yinkinChat/Pods-yinkinChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E5A2662B35BABB74CCE2C46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yinkinChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0F7168CDF00C258FA9FFFB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yinkinChatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34F1F2DA230CACF8004F4A51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F1F2EA230CACF9004F4A51 /* yinkinChat.xcdatamodeld in Sources */,
+				34EFD5332346B1C900FCA2BD /* NewStoryViewController.swift in Sources */,
+				34D9F3D523440B27004D936B /* BlogTableViewCell.swift in Sources */,
+				34D9F3D12344067D004D936B /* BlogViewController.swift in Sources */,
+				34D9F3CE2344067D004D936B /* messageTableViewCell.swift in Sources */,
+				34F1F325230CCCD1004F4A51 /* loginViewController.swift in Sources */,
+				34EF211B23446CAA00917A67 /* BlogDetailViewController.swift in Sources */,
+				34F1F2E4230CACF8004F4A51 /* chatViewController.swift in Sources */,
+				34F1F323230CCCA8004F4A51 /* registerViewController.swift in Sources */,
+				34DAC7C5234416F600C8E388 /* Blog.swift in Sources */,
+				34F1F2E2230CACF8004F4A51 /* AppDelegate.swift in Sources */,
+				34EFD5382346B8F000FCA2BD /* PreviewViewController.swift in Sources */,
+				34F1F327230CDB4E004F4A51 /* Message.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34F1F2F1230CACFA004F4A51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34EFD5342346B1C900FCA2BD /* NewStoryViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34F1F2FC230CACFA004F4A51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34F1F2F7230CACFA004F4A51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34F1F2DD230CACF8004F4A51 /* yinkinChat */;
+			targetProxy = 34F1F2F6230CACFA004F4A51 /* PBXContainerItemProxy */;
+		};
+		34F1F302230CACFA004F4A51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34F1F2DD230CACF8004F4A51 /* yinkinChat */;
+			targetProxy = 34F1F301230CACFA004F4A51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34F1F307230CACFA004F4A51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		34F1F308230CACFA004F4A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34F1F30A230CACFA004F4A51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72EDE3A0FF34D7B0E7D4518B /* Pods-yinkinChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 236Z8WKQJB;
+				INFOPLIST_FILE = yinkinChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziruoinc.yinkinChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		34F1F30B230CACFA004F4A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32685CF8D71864614B7BC81D /* Pods-yinkinChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 236Z8WKQJB;
+				INFOPLIST_FILE = yinkinChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziruoinc.yinkinChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		34F1F30D230CACFA004F4A51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 988FF4008FD8FCC3289AD83D /* Pods-yinkinChatTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 236Z8WKQJB;
+				INFOPLIST_FILE = yinkinChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziruoinc.yinkinChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yinkinChat.app/yinkinChat";
+			};
+			name = Debug;
+		};
+		34F1F30E230CACFA004F4A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA88CD58DF78FDFBDDE73A1C /* Pods-yinkinChatTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 236Z8WKQJB;
+				INFOPLIST_FILE = yinkinChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziruoinc.yinkinChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yinkinChat.app/yinkinChat";
+			};
+			name = Release;
+		};
+		34F1F310230CACFA004F4A51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F39704E8125B4AE89F5861E /* Pods-yinkinChatUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 236Z8WKQJB;
+				INFOPLIST_FILE = yinkinChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziruoinc.yinkinChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = yinkinChat;
+			};
+			name = Debug;
+		};
+		34F1F311230CACFA004F4A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F1F639B96563AF622B47848 /* Pods-yinkinChatUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 236Z8WKQJB;
+				INFOPLIST_FILE = yinkinChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ziruoinc.yinkinChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = yinkinChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34F1F2D9230CACF8004F4A51 /* Build configuration list for PBXProject "yinkinChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34F1F307230CACFA004F4A51 /* Debug */,
+				34F1F308230CACFA004F4A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34F1F309230CACFA004F4A51 /* Build configuration list for PBXNativeTarget "yinkinChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34F1F30A230CACFA004F4A51 /* Debug */,
+				34F1F30B230CACFA004F4A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34F1F30C230CACFA004F4A51 /* Build configuration list for PBXNativeTarget "yinkinChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34F1F30D230CACFA004F4A51 /* Debug */,
+				34F1F30E230CACFA004F4A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34F1F30F230CACFA004F4A51 /* Build configuration list for PBXNativeTarget "yinkinChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34F1F310230CACFA004F4A51 /* Debug */,
+				34F1F311230CACFA004F4A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		34F1F2E8230CACF9004F4A51 /* yinkinChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				34F1F2E9230CACF9004F4A51 /* yinkinChat.xcdatamodel */,
+			);
+			currentVersion = 34F1F2E9230CACF9004F4A51 /* yinkinChat.xcdatamodel */;
+			path = yinkinChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 34F1F2D6230CACF8004F4A51 /* Project object */;
+}
