@@ -25,6 +25,7 @@ class registerViewController: UIViewController{
 
     @IBOutlet weak var emailTextInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
+    @IBOutlet weak var errorAlert: UILabel!
     
     
     override func viewDidLoad() {
@@ -41,10 +42,12 @@ class registerViewController: UIViewController{
             
             if error != nil {
                 print(error!)
+                self.errorAlert.text = "fail to register with the given email/password"
             } else {
                 //success
                 
-                self.performSegue(withIdentifier: "moveToChat", sender: self)
+               self.errorAlert.text = "Register Success"
+                self.performSegue(withIdentifier: "moveToGroup", sender: (Any).self )
             }
         }
     }
@@ -53,9 +56,10 @@ class registerViewController: UIViewController{
         Auth.auth().signIn(withEmail: emailTextInput.text!, password: passwordInput.text!) { (user, error) in
                    if error != nil {
                        print(error!)
+                        self.errorAlert.text = "fail to login with the given email/password"
                    } else {
                        
-                       
+                    self.errorAlert.text = "Login Success!" 
                        
                    }
                }

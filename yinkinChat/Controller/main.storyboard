@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -125,7 +126,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yinkin Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqP-Pt-qvc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yinkin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqP-Pt-qvc">
                                         <rect key="frame" x="17" y="26" width="329" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -144,7 +145,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="24_7_support" translatesAutoresizingMaskIntoConstraints="NO" id="V8X-wb-FmT">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adminImage" translatesAutoresizingMaskIntoConstraints="NO" id="V8X-wb-FmT">
                                         <rect key="frame" x="61" y="233" width="240" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -161,6 +162,7 @@
                                         <state key="normal" title="Login"/>
                                         <connections>
                                             <action selector="loginButtonPressed:" destination="yvz-Il-alj" eventType="touchUpInside" id="KPL-Tf-sAr"/>
+                                            <segue destination="JVL-TO-eNP" kind="show" identifier="moveToChat" id="2Hs-Ur-Apk"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCi-OY-MqI">
@@ -173,11 +175,19 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53X-XS-d0L">
                                         <rect key="frame" x="146" y="397" width="71" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Sigin"/>
+                                        <state key="normal" title="Sign up"/>
                                         <connections>
                                             <action selector="registerButtonPressed:" destination="yvz-Il-alj" eventType="touchUpInside" id="tLC-5m-0UL"/>
+                                            <segue destination="MgY-ju-FNd" kind="show" id="Xga-Fv-CIe"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6Y-pM-6O4">
+                                        <rect key="frame" x="17" y="537" width="329" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="QJe-mE-iON"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="KEG-kV-iuz"/>
@@ -189,12 +199,118 @@
                     <tabBarItem key="tabBarItem" title="Account" id="dbs-3A-bpU"/>
                     <connections>
                         <outlet property="emailTextInput" destination="nEH-7Z-3f2" id="0RQ-c3-oTR"/>
+                        <outlet property="errorAlert" destination="q6Y-pM-6O4" id="t3I-d7-BEv"/>
                         <outlet property="passwordInput" destination="fQ4-eX-ucF" id="uce-QQ-JNx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o2P-yP-dzv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11.594202898550726" y="918.75"/>
+            <point key="canvasLocation" x="-84.057971014492765" y="928.79464285714278"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="5SZ-22-TSW">
+            <objects>
+                <viewController id="JVL-TO-eNP" customClass="chatViewController" customModule="yinkinChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k5W-2i-DIH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ha7-Fd-ZWN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <textField key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Hz9-dR-KXZ">
+                                    <rect key="frame" x="0.0" y="100" width="414" height="34"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="agA-6P-k1n">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="agA-6P-k1n" id="72U-s6-pEL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="irJ-hc-Cu3">
+                                <rect key="frame" x="0.0" y="808" width="414" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.027393950149416924" green="0.017877634614706039" blue="0.041633479297161102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jXH-T7-gJu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="85R-gc-PmO"/>
+                    <connections>
+                        <outlet property="messageTable" destination="Ha7-Fd-ZWN" id="j6j-go-dsB"/>
+                        <outlet property="messageTextInput" destination="irJ-hc-Cu3" id="OoH-rc-EpC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FOq-yZ-ylh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-342.02898550724638" y="1735.7142857142856"/>
+        </scene>
+        <!--Group Collection View Controller-->
+        <scene sceneID="i1V-61-6Id">
+            <objects>
+                <collectionViewController id="MgY-ju-FNd" customClass="groupCollectionViewController" customModule="yinkinChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Qen-MN-LmP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tYm-Yp-sAl">
+                            <size key="itemSize" width="195" height="191"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="groupCell" id="A6O-UZ-5KK" customClass="GroupCollectionViewCell" customModule="yinkinChat" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UVe-G4-dvR">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mc-Nr-aYS">
+                                            <rect key="frame" x="52" y="37" width="91" height="112"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Group1">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="system" size="17"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="customSize" width="200" height="200"/>
+                                <connections>
+                                    <outlet property="groupLabel" destination="2Mc-Nr-aYS" id="X4G-dk-emj"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="MgY-ju-FNd" id="kTX-mb-0zI"/>
+                            <outlet property="delegate" destination="MgY-ju-FNd" id="pK5-3L-dgD"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="CWJ-cX-Ceq"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Kj-5h-h4F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="611.59420289855075" y="1638.6160714285713"/>
         </scene>
         <!--Account-->
         <scene sceneID="uKi-OA-iTu">
@@ -234,6 +350,13 @@
                                             <action selector="loginButtonPressed:" destination="jJH-te-RIw" eventType="touchUpInside" id="Mmq-FJ-7lE"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lko-8O-Aca">
+                                        <rect key="frame" x="99" y="470" width="211" height="63"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="TtZ-Bn-zBb" firstAttribute="leading" secondItem="cEF-aY-9D8" secondAttribute="leading" constant="142" id="dKR-op-uBd"/>
@@ -257,6 +380,7 @@
                     <tabBarItem key="tabBarItem" title="Account" id="Dcu-2N-X3u"/>
                     <navigationItem key="navigationItem" id="tHZ-NQ-3bi"/>
                     <connections>
+                        <outlet property="alertMessage" destination="lko-8O-Aca" id="8GT-TZ-gOU"/>
                         <outlet property="passwordInput" destination="vZS-g1-qyp" id="uT1-ms-vEw"/>
                         <outlet property="usernameInput" destination="4SG-aJ-cCa" id="1WI-3c-860"/>
                     </connections>
@@ -415,6 +539,7 @@
                 <navigationController title="yinkin" automaticallyAdjustsScrollViewInsets="NO" id="JJZ-lm-aca" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="blog" id="JPf-vU-zkr"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="S39-V3-hUk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="piM-Gu-aLA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -449,7 +574,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="24_7_support" width="346" height="346"/>
+        <image name="adminImage" width="920" height="1162"/>
         <image name="xmark.square" catalog="system" width="64" height="56"/>
     </resources>
 </document>

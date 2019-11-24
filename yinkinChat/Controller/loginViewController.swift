@@ -32,6 +32,8 @@ class loginViewController: UIViewController {
     @IBOutlet weak var usernameInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
     
+    @IBOutlet var alertMessage: UILabel!
+    
     var delegate : UserStatus?
     
     override func viewDidLoad() {
@@ -52,10 +54,12 @@ class loginViewController: UIViewController {
         Auth.auth().signIn(withEmail: usernameInput.text!, password: passwordInput.text!) { (user, error) in
             if error != nil {
                 print(error!)
+                self.alertMessage.text = "Fail to login with email/password"
             } else {
                 self.delegate?.dataDidFinishLogin()
+                self.alertMessage.text = "Success to login with email/password"
                 self.dismiss(animated: true, completion: nil)
-                //self.performSegue(withIdentifier: "moveToChat", sender: self)
+                self.performSegue(withIdentifier: "moveToChat", sender: self)
             }
         }
         
