@@ -59,7 +59,7 @@ class loginViewController: UIViewController {
                 self.delegate?.dataDidFinishLogin()
                 self.alertMessage.text = "Success to login with email/password"
                 self.dismiss(animated: true, completion: nil)
-                self.performSegue(withIdentifier: "moveToChat", sender: self)
+                //self.performSegue(withIdentifier: "moveToChat", sender: self)
             }
         }
         

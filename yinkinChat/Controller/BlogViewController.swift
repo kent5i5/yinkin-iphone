@@ -9,8 +9,8 @@
 import UIKit
 import Firebase
 import FirebaseFirestore
-//import Alamofire
-//import AlamofireImage
+import Alamofire
+import AlamofireImage
 
 
 
@@ -27,7 +27,7 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
     var blog = Blog()
     var UserIsLogin: Bool = false
 
-   
+    
     @IBOutlet weak var blogTableView: UITableView!
     
     override func viewDidLoad() {
@@ -42,6 +42,14 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
         Firestore.firestore().settings = settings
         db = Firestore.firestore()
 
+        let refreshControl = UIRefreshControl()
+        refreshControl.backgroundColor = UIColor.clear
+        refreshControl.tintColor = UIColor.clear
+        refreshControl.addTarget(self, action: #selector(refreshTable(_:)) , for: .valueChanged)
+        self.blogTableView.addSubview(refreshControl)
+        
+        
+       
         retrieveEntireCollection()
       
     }
@@ -75,13 +83,13 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.titleLabel.text = documentArray[indexPath.row].title
         cell.authorLabel.text = documentArray[indexPath.row].author
   
-     
-//       guard let url = try? URL(string: documentArray[indexPath.row].thumbnail) else {
-//            fatalError("bad image!")
-//        }
-//            let placeholderImage = UIImage(named: "24_7_support")!
-//
-//            cell.thumbnail.af_setImage(withURL: url, placeholderImage: placeholderImage)
+        
+       guard let url = try? URL(string: documentArray[indexPath.row].thumbnail) else {
+            fatalError("bad image!")
+        }
+        let placeholderImage = UIImage(named: "24_7_support")!
+
+        cell.thumbnail.af_setImage(withURL: url, placeholderImage: placeholderImage)
         
         let usLocale = Locale(identifier: "en_US")
         cell.dateLabel.text = documentArray[indexPath.row].createdDate.description(with: usLocale)
@@ -97,8 +105,9 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 300
     }
+    
     
     //MARK: - Scroll View Methods
     
@@ -106,7 +115,18 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
     func showButtonPressed(){
        // performSegue(withIdentifier: "goToBlogDetail", sender: Any?.self)
     }
-
+    @IBAction func refreshButtonPressed(_ sender: Any) {
+        self.retrieveEntireCollection()
+    }
+    
+    @objc private func refreshTable(_ sender: Any) {
+        self.retrieveEntireCollection()
+        self.blogTableView.refreshControl?.endRefreshing()
+        self.activityIndicatorView.stopAnimating()
+//
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "goToBlogdetail" {
@@ -159,6 +179,7 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
 
   
     //MARK Firestore functions
+    
     func retrieveDocumentById(index: Int){
         let docRef = db.collection("blog").document("blodId" + String(index+1))
             
@@ -266,6 +287,7 @@ class BlogViewController: UIViewController, UITableViewDelegate, UITableViewData
             let next = self.db.collection("blog").order(by: "createdDate").start(afterDocument: lastSnapshot)
 
         } // listener
+        
     }
     
 }//end of BlogViewController
