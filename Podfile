@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '12.2'
+platform :ios, '12.4'
 
 target 'yinkinChat' do
   # Comment the next line if you don't want to use dynamic frameworks
