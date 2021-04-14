@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340CEC96262556A500334925 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CEC95262556A500334925 /* AboutViewController.swift */; };
+		340CECA326255AD900334925 /* LegalFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CECA226255AD900334925 /* LegalFile.swift */; };
+		340CECAB26255DB600334925 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340CECAA26255DB600334925 /* ViewController.swift */; };
 		343B6E89235968630030E638 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343B6E88235968630030E638 /* main.storyboard */; };
 		34450BF7238A231000A85A4E /* groupCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34450BF6238A231000A85A4E /* groupCollectionViewController.swift */; };
 		34450BF9238A247800A85A4E /* GroupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34450BF8238A247800A85A4E /* GroupCollectionViewCell.swift */; };
@@ -54,6 +57,9 @@
 		0F1F639B96563AF622B47848 /* Pods-yinkinChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinkinChatUITests.release.xcconfig"; path = "Target Support Files/Pods-yinkinChatUITests/Pods-yinkinChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1D11C29C321E5B16C50ABE3A /* Pods_yinkinChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yinkinChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32685CF8D71864614B7BC81D /* Pods-yinkinChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yinkinChat.release.xcconfig"; path = "Target Support Files/Pods-yinkinChat/Pods-yinkinChat.release.xcconfig"; sourceTree = "<group>"; };
+		340CEC95262556A500334925 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		340CECA226255AD900334925 /* LegalFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegalFile.swift; sourceTree = "<group>"; };
+		340CECAA26255DB600334925 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		343B6E88235968630030E638 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = main.storyboard; path = ../Controller/main.storyboard; sourceTree = "<group>"; };
 		3443FC04235FB7DA0086E14B /* yinkinChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yinkinChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3443FC05235FB7DA0086E14B /* yinkinChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yinkinChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +173,7 @@
 		34F1F313230CAD15004F4A51 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				340CECA226255AD900334925 /* LegalFile.swift */,
 				34F1F326230CDB4E004F4A51 /* Message.swift */,
 				34F1F2E8230CACF9004F4A51 /* yinkinChat.xcdatamodeld */,
 				34DAC7C4234416F600C8E388 /* Blog.swift */,
@@ -188,6 +195,8 @@
 				34EF211A23446CAA00917A67 /* BlogDetailViewController.swift */,
 				34EFD5322346B1C900FCA2BD /* NewStoryViewController.swift */,
 				34EFD5372346B8F000FCA2BD /* PreviewViewController.swift */,
+				340CEC95262556A500334925 /* AboutViewController.swift */,
+				340CECAA26255DB600334925 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,8 +204,8 @@
 		34F1F315230CADA6004F4A51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				34F1F31A230CC7EC004F4A51 /* GoogleService-Info.plist */,
 				34F1F2EB230CACFA004F4A51 /* Assets.xcassets */,
+				34F1F31A230CC7EC004F4A51 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -444,10 +453,13 @@
 				34450BF7238A231000A85A4E /* groupCollectionViewController.swift in Sources */,
 				34EF211B23446CAA00917A67 /* BlogDetailViewController.swift in Sources */,
 				34F1F2E4230CACF8004F4A51 /* chatViewController.swift in Sources */,
+				340CECA326255AD900334925 /* LegalFile.swift in Sources */,
 				34F1F323230CCCA8004F4A51 /* registerViewController.swift in Sources */,
+				340CECAB26255DB600334925 /* ViewController.swift in Sources */,
 				34DAC7C5234416F600C8E388 /* Blog.swift in Sources */,
 				34F1F2E2230CACF8004F4A51 /* AppDelegate.swift in Sources */,
 				34EFD5382346B8F000FCA2BD /* PreviewViewController.swift in Sources */,
+				340CEC96262556A500334925 /* AboutViewController.swift in Sources */,
 				34F1F327230CDB4E004F4A51 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

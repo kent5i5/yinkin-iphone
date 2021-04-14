@@ -15,6 +15,7 @@ pod 'Firebase/Firestore'
 pod 'Alamofire'
 pod 'AlamofireImage'
 pod 'ChameleonFramework'
+pod "MarkdownKit"
 
 pod 'GoogleAnalytics'
 

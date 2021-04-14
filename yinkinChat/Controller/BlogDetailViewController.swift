@@ -9,6 +9,7 @@
 //import AlamofireImage
 
 import UIKit
+import MarkdownKit
 
 class BlogDetailViewController: UIViewController {
 
@@ -31,22 +32,35 @@ class BlogDetailViewController: UIViewController {
         titleLabel.text = documentArray.title
         //let size = documentArray.content.count
         contentTextField.text = ""
+        let markdownParser = MarkdownParser()
+        let attributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.white,
+            .backgroundColor: UIColor.red,
+            .font: UIFont.boldSystemFont(ofSize: 36)
+        ]
+        let markdown = NSMutableAttributedString(string: "", attributes: attributes)
         for content in documentArray.content{
-
-            contentTextField.text = contentTextField.text! + content
+            
+           // let markdown = "I support a *lot* of custom Markdown **Elements**, even `code`!"
+            markdown.append(markdownParser.parse(content))
+       
+            print(markdown)
+           
         }
+        contentTextField.attributedText = markdown
+
+        
+
         for tag in documentArray.tags {
             tagsLabel.text = tagsLabel.text! + " " + tag
         }
 
         let usLocale = Locale(identifier: "en_US")
         timeLabel.text = documentArray.createdDate.description(with: usLocale)
-//
-//
-//        let url = URL(string: documentArray.thumbnail)!
-//        let placeholderImage = UIImage(named: "24_7_support")!
-//
-//        thumbnail.af_setImage(withURL: url, placeholderImage: placeholderImage)
+        
+        
+
+        
     }
 
 
